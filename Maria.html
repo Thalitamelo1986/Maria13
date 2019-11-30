@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 id="Titulo" >Palabra secreta</h2>
+
+<p>Nombre de la mujer mas hermosa del mundo:</p>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x, text;
+
+  // Get the value of the input field with id="numb"
+  x = document.getElementById("numb").value;
+
+  // If x is Not a Number or less than one or greater than 10
+  if (x==="Maria") {
+    text = "Input OK";
+  } else { 
+    text = "Input not valid";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 
